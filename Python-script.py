@@ -54,7 +54,11 @@ tn.write(b"network 10.0.0.0 255.255.255.0 area 0\n")
 tn.write(b"network 192.168.10.0 0.0.0.255 area 0\n")
 
 tn.write(b"exit\n")
+
+#to check route table
+tn.write(b" do show ip route \n")
 tn.write(b"exit\n")
+
 tn.write(b"write\n")
 tn.write(b"exit\n")
 
